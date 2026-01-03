@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import type { Config } from "tailwindcss";
 
-const nextConfig: NextConfig = {
-  reactStrictMode: true
-};
-
-export default nextConfig;
+export default {
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+} satisfies Config;

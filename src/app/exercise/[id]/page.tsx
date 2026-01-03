@@ -3,20 +3,25 @@ import Card from "@/components/Card";
 import { getExerciseById } from "@/lib/plan";
 import PrefsClient from "./prefsClient";
 
-export default function ExercisePage({ params }: { params: { id: string } }) {
-  const ex = getExerciseById(params.id);
+export default async function ExercisePage({
+  params
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const ex = getExerciseById(id);
 
   if (!ex) {
     return (
       <AppShell title="Ćwiczenie" subtitle="Nie znaleziono">
-        <Card title="Błąd">Nie znaleziono ćwiczenia: {params.id}</Card>
+        <Card title="Błąd">Nie znaleziono ćwiczenia: {id}</Card>
       </AppShell>
     );
   }
 
   return (
-    <AppShell title={ex.name_pl} subtitle={`ID: ${ex.id}`}>
-      <Card title="Instrukcja">
+    <AppShell title={ex.name_pl} subtitle={`ID: ${ex.id}`}>      
+    <Card title="Instrukcja">
         <div className="whitespace-pre-wrap text-sm text-white/80">{ex.how_pl ?? "—"}</div>
         {ex.equipment?.length ? (
           <div className="mt-3 text-xs text-white/60">Sprzęt: {ex.equipment.join(", ")}</div>
