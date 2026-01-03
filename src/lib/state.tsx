@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
+import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type { AppState, CheckIn, ExerciseProgress, MediaPref } from "./types";
 import { getSupabase } from "./supabase";
 
@@ -54,6 +54,12 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
   const [authed, setAuthed] = useState(false);
 
+  // keep latest state for async writes (avoid stale closure)
+  const stateRef = useRef<AppState>(state);
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
+
   // --- AUTH
   useEffect(() => {
     const supabase = getSupabase();
@@ -82,20 +88,21 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       .eq("user_id", user.id)
       .maybeSingle();
 
-    if (!settingsRes.error && settingsRes.data !== null) {  
-      const s = settingsRes.data;
+    if (!settingsRes.error && settingsRes.data !== null) {
+      const row = settingsRes.data;
       setState((prev) => ({
         ...prev,
-        startDateISO: s.start_date ?? null,
-        mediaPref: ((s.media_pref ?? "both") as MediaPref)
+        startDateISO: row.start_date ?? null,
+        mediaPref: (row.media_pref ?? "both") as MediaPref
       }));
     } else {
       // jeśli nie ma rekordu, utwórz default (upsert)
-      await supabase.from("user_settings").upsert({
+      const { error } = await supabase.from("user_settings").upsert({
         user_id: user.id,
         start_date: null,
         media_pref: "both"
       });
+      if (error) console.error("Supabase user_settings bootstrap upsert failed:", error);
     }
 
     // today template
@@ -106,6 +113,10 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       .eq("user_id", user.id)
       .eq("date_iso", todayISO)
       .maybeSingle();
+
+    if (daySessionRes.error) {
+      console.error("Supabase day_sessions select failed:", daySessionRes.error);
+    }
 
     setState((prev) => ({
       ...prev,
@@ -123,6 +134,10 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       .select("date_iso, exercise_id, done, sets, reps, duration_seconds, load, note, updated_at")
       .eq("user_id", user.id)
       .eq("date_iso", todayISO);
+
+    if (logsRes.error) {
+      console.error("Supabase exercise_logs select failed:", logsRes.error);
+    }
 
     if (!logsRes.error && logsRes.data) {
       const mapForDay: Record<string, ExerciseProgress> = {};
@@ -154,6 +169,10 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       .eq("user_id", user.id)
       .gte("date_iso", fromISO)
       .order("created_at", { ascending: true });
+
+    if (checkRes.error) {
+      console.error("Supabase check_ins select failed:", checkRes.error);
+    }
 
     if (!checkRes.error && checkRes.data) {
       const byDate: Record<string, CheckIn[]> = {};
@@ -211,51 +230,75 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
       setStartDateISO: (iso) => {
         const supabase = getSupabase();
+
+        // optimistic
         setState((s) => ({ ...s, startDateISO: iso }));
-        supabase.auth.getSession().then(({ data }) => {
+
+        supabase.auth.getSession().then(async ({ data }) => {
           const user = data.session?.user;
           if (!user) return;
-          supabase.from("user_settings").upsert({
+
+          const currentPref = stateRef.current.mediaPref;
+
+          const { error } = await supabase.from("user_settings").upsert({
             user_id: user.id,
             start_date: iso,
-            media_pref: state.mediaPref
+            media_pref: currentPref
           });
+
+          if (error) console.error("Supabase user_settings upsert failed (setStartDateISO):", error);
         });
       },
 
       setMediaPref: (pref) => {
         const supabase = getSupabase();
+
+        // optimistic
         setState((s) => ({ ...s, mediaPref: pref }));
-        supabase.auth.getSession().then(({ data }) => {
+
+        supabase.auth.getSession().then(async ({ data }) => {
           const user = data.session?.user;
           if (!user) return;
-          supabase.from("user_settings").upsert({
+
+          const currentStart = stateRef.current.startDateISO;
+
+          const { error } = await supabase.from("user_settings").upsert({
             user_id: user.id,
-            start_date: state.startDateISO,
+            start_date: currentStart,
             media_pref: pref
           });
+
+          if (error) console.error("Supabase user_settings upsert failed (setMediaPref):", error);
         });
       },
 
       pickTemplateForDate: (dateISO, templateId) => {
         const supabase = getSupabase();
+
+        // optimistic
         setState((s) => ({
           ...s,
           selectedTemplateByDate: { ...s.selectedTemplateByDate, [dateISO]: templateId }
         }));
-        supabase.auth.getSession().then(({ data }) => {
+
+        supabase.auth.getSession().then(async ({ data }) => {
           const user = data.session?.user;
           if (!user) return;
-          supabase.from("day_sessions").upsert({
+
+          const { error } = await supabase.from("day_sessions").upsert({
             user_id: user.id,
             date_iso: dateISO,
             template_id: templateId
           });
+
+          if (error) console.error("Supabase day_sessions upsert failed:", error);
         });
       },
 
       upsertExerciseProgress: (dateISO, exerciseId, patch) => {
         const supabase = getSupabase();
+
+        // optimistic
         setState((s) => {
           const day = s.exerciseProgressByDate[dateISO] ?? {};
           const prev = day[exerciseId] ?? { done: false, updatedAtISO: new Date().toISOString() };
@@ -279,10 +322,11 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
           };
         });
 
-        supabase.auth.getSession().then(({ data }) => {
+        supabase.auth.getSession().then(async ({ data }) => {
           const user = data.session?.user;
           if (!user) return;
-          supabase.from("exercise_logs").upsert({
+
+          const { error } = await supabase.from("exercise_logs").upsert({
             user_id: user.id,
             date_iso: dateISO,
             exercise_id: exerciseId,
@@ -293,11 +337,14 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
             load: patch.load ?? undefined,
             note: patch.note ?? undefined
           });
+
+          if (error) console.error("Supabase exercise_logs upsert failed:", error);
         });
       },
 
       addCheckIn: (dateISO, input) => {
         const supabase = getSupabase();
+
         // optimistic UI
         const optimistic: CheckIn = {
           id: `optimistic-${Date.now()}`,
@@ -317,10 +364,11 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
           };
         });
 
-        supabase.auth.getSession().then(({ data }) => {
+        supabase.auth.getSession().then(async ({ data }) => {
           const user = data.session?.user;
           if (!user) return;
-          supabase.from("check_ins").insert({
+
+          const { error } = await supabase.from("check_ins").insert({
             user_id: user.id,
             date_iso: dateISO,
             pain: input.pain,
@@ -329,6 +377,8 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
             stiffness: input.stiffness,
             comment: input.comment ?? null
           });
+
+          if (error) console.error("Supabase check_ins insert failed:", error);
         });
       },
 
@@ -342,11 +392,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
   // --- prosty login screen w providerze (żeby nie ruszać routingu)
   if (!loading && !authed) {
-    return (
-      <EmailLogin
-        onSignIn={api.signInWithEmailOtp}
-      />
-    );
+    return <EmailLogin onSignIn={api.signInWithEmailOtp} />;
   }
 
   return <AppStateContext.Provider value={api}>{children}</AppStateContext.Provider>;
@@ -360,9 +406,7 @@ function EmailLogin({ onSignIn }: { onSignIn: (email: string) => Promise<void> }
   return (
     <div className="mx-auto max-w-md p-6">
       <h1 className="text-xl font-semibold">Zaloguj się</h1>
-      <p className="mt-2 text-sm opacity-80">
-        Wpisz email — wyślę link/kod logowania (Supabase).
-      </p>
+      <p className="mt-2 text-sm opacity-80">Wpisz email — wyślę link/kod logowania (Supabase).</p>
 
       <input
         className="mt-4 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm"
