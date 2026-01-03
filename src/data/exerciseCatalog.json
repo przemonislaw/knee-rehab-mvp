@@ -1,0 +1,607 @@
+{
+  "version": "1.0",
+  "language": "pl",
+  "exercises": [
+    {
+      "id": "ex_quads_setting",
+      "name_pl": "Napięcia izometryczne m. czworogłowego (quads setting)",
+      "category": "strength_isometric",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "Leżenie z wyprostowaną nogą. Dociskaj kolano do podłoża, napnij przód uda. Bez bólu.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "hold_seconds": null
+      },
+      "safety_pl": "Przerwij lub zmniejsz, jeśli ból przekracza 3/10 w trakcie."
+    },
+    {
+      "id": "ex_glute_iso",
+      "name_pl": "Izometryczne napinanie pośladków",
+      "category": "strength_isometric",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "W leżeniu lub staniu napnij pośladki, utrzymaj napięcie, rozluźnij.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "hold_seconds": null
+      },
+      "safety_pl": "Bez bólu kolana."
+    },
+    {
+      "id": "ex_hamstring_iso",
+      "name_pl": "Izometryczne napinanie mm. kulszowo‑goleniowych",
+      "category": "strength_isometric",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "Aktywuj tył uda bez ruchu w stawie kolanowym (delikatne napięcie).",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "hold_seconds": null
+      },
+      "safety_pl": "Bez bólu kolana."
+    },
+    {
+      "id": "ex_heel_slides",
+      "name_pl": "Ślizganie pięty po podłożu (heel slides) – ROM w odciążeniu",
+      "category": "mobility_rom",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "W leżeniu przesuwaj piętę w stronę pośladka do komfortowego zakresu, potem wróć.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Zakres tylko do komfortu, bez prowokowania bólu."
+    },
+    {
+      "id": "ex_stretch_hamstrings",
+      "name_pl": "Rozciąganie grupy kulszowo‑goleniowej",
+      "category": "mobility_stretch",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "Skłony w siadzie prostym z zachowaniem prostych pleców (bez szarpania).",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Nie doprowadzaj do bólu stawu."
+    },
+    {
+      "id": "ex_stretch_calves",
+      "name_pl": "Rozciąganie łydki (wykrok przy ścianie)",
+      "category": "mobility_stretch",
+      "equipment": [
+        "ściana"
+      ],
+      "how_pl": "Wykrok, pięta tylnej nogi na ziemi, delikatnie dociśnij, aż poczujesz rozciąganie.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Bez bólu kolana."
+    },
+    {
+      "id": "ex_patella_mob",
+      "name_pl": "Mobilizacja rzepki",
+      "category": "mobility_manual",
+      "equipment": [
+        "ręce"
+      ],
+      "how_pl": "Delikatnie przesuwaj rzepkę w różnych kierunkach, aby utrzymać elastyczność troczków.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Tylko jeśli bez przeciwwskazań bólowych."
+    },
+    {
+      "id": "ex_sit_proprio_shift",
+      "name_pl": "Propriocepcja na siedząco – przesuwanie ciężaru pośladków",
+      "category": "proprioception",
+      "equipment": [
+        "krzesło/łóżko"
+      ],
+      "how_pl": "Siedząc, przenoś ciężar ciała z jednego pośladka na drugi, kontrolując ruch.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Bez bólu."
+    },
+    {
+      "id": "ex_mini_squat_30",
+      "name_pl": "Bardzo płytkie przysiady do ~30°",
+      "category": "strength_closed_chain",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Wykonuj wolno przysiad do ok. 30° zgięcia. Kolano nad stopą, bez koślawienia.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "tempo": "powoli"
+      },
+      "safety_pl": "Nie przekraczaj bólu; jeśli ból >3/10 – zmniejsz."
+    },
+    {
+      "id": "ex_pool_walk",
+      "name_pl": "Chodzenie w wodzie / ćwiczenia w basenie",
+      "category": "cardio_low_impact",
+      "equipment": [
+        "basen"
+      ],
+      "how_pl": "Chodzenie w wodzie i lekkie ćwiczenia wyporu – odciążenie stawu.",
+      "parameters": {
+        "duration_minutes": null
+      },
+      "safety_pl": "Stosuj szczególnie, jeśli ląd prowokuje ból."
+    },
+    {
+      "id": "ex_half_squat_45_60",
+      "name_pl": "Półprzysiady do 45–60° (wolne tempo)",
+      "category": "strength_closed_chain",
+      "equipment": [
+        "hantel 2–5 kg (opcjonalnie)",
+        "taśma (opcjonalnie)"
+      ],
+      "how_pl": "Przysiad do 45–60°. Tempo ok. 2 s w dół i 2 s w górę. Kontrola osi kolan.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "tempo": "2s dół / 2s góra"
+      },
+      "safety_pl": "Unikaj ruchów skrętnych i skrajnych zakresów."
+    },
+    {
+      "id": "ex_hamstring_curl_prone",
+      "name_pl": "Uginanie kolan na hamstringi (leżenie przodem / maszyna)",
+      "category": "strength_open_chain",
+      "equipment": [
+        "obciążnik 0.5–1 kg na kostce lub maszyna"
+      ],
+      "how_pl": "Uginaj kolano w bezbolesnym zakresie. Początkowo niepełny zakres, z czasem pełniej.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "load_note_pl": "0.5–1 kg na start (jeśli wersja z obciążnikiem)"
+      },
+      "safety_pl": "Bez bólu."
+    },
+    {
+      "id": "ex_glute_bridge",
+      "name_pl": "Mostki biodrowe (glute bridges)",
+      "category": "strength",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "Leżenie na plecach, kolana ugięte, unoszenie miednicy z napięciem pośladków.",
+      "parameters": {
+        "sets": 3,
+        "reps": 10
+      },
+      "safety_pl": "Bez bólu kolana."
+    },
+    {
+      "id": "ex_side_hip_abduction",
+      "name_pl": "Odwodzenie biodra w leżeniu bokiem",
+      "category": "strength",
+      "equipment": [
+        "mata/podłoże"
+      ],
+      "how_pl": "Leżenie bokiem, unieś wyprostowaną nogę w górę, kontrolowany ruch.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Kontroluj miednicę."
+    },
+    {
+      "id": "ex_clamshell_miniband",
+      "name_pl": "Muszelka (clam shell) z minibandem",
+      "category": "strength",
+      "equipment": [
+        "miniband"
+      ],
+      "how_pl": "Leżenie bokiem, kolana zgięte, otwieraj kolano górnej nogi przeciw oporowi.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Bez kompensacji w miednicy."
+    },
+    {
+      "id": "ex_calf_raises",
+      "name_pl": "Wspięcia na palce (łydka) – obunóż → jednonóż",
+      "category": "strength",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Unoszenie pięt. Najpierw obunóż, potem jednonóż jeśli tolerowane.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Stabilna stopa, bez bólu."
+    },
+    {
+      "id": "ex_single_leg_balance",
+      "name_pl": "Stanie jednonóż (stabilne podłoże → utrudnienia)",
+      "category": "proprioception",
+      "equipment": [
+        "podłoże",
+        "poręcz/ściana (asekuracja)"
+      ],
+      "how_pl": "Utrzymuj równowagę 15–30 s. Progresuj: oczy zamknięte, poduszka sensomotoryczna.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": 30
+      },
+      "safety_pl": "Asekuruj się, by nie dopuścić do skrętu."
+    },
+    {
+      "id": "ex_weight_shift_standing",
+      "name_pl": "Przenoszenie ciężaru (bujanie z nogi na nogę)",
+      "category": "proprioception",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "W lekkim rozkroku przenoś ciężar z nogi na nogę, kontrolując kolano.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Bez bólu."
+    },
+    {
+      "id": "ex_ball_throw_catch",
+      "name_pl": "Stanie jednonóż + rzut piłki o ścianę i łapanie",
+      "category": "proprioception",
+      "equipment": [
+        "piłka",
+        "ściana"
+      ],
+      "how_pl": "Utrzymuj równowagę na jednej nodze podczas rzutu i chwytu piłki.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Utrzymuj oś kolana."
+    },
+    {
+      "id": "ex_toe_tap_points",
+      "name_pl": "Dotykanie stopą punktów na podłożu (przy zachowaniu równowagi)",
+      "category": "proprioception",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Stojąc na jednej nodze, dotykaj drugą stopą różnych punktów na podłodze.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Kontroluj kolano nogi podporowej."
+    },
+    {
+      "id": "ex_squat_to_90_weighted",
+      "name_pl": "Przysiady do ~90° z obciążeniem (progresja)",
+      "category": "strength",
+      "equipment": [
+        "kettlebell / sztanga"
+      ],
+      "how_pl": "Schodź do ~90° bez bólu. Pilnuj osi kolan, wolna faza ekscentryczna.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "load_note_pl": "Start ok. 10 kg, progres do ~20 kg wg tolerancji"
+      },
+      "safety_pl": "Unikaj koślawienia kolan."
+    },
+    {
+      "id": "ex_lunges_fwd_back",
+      "name_pl": "Wykroki (do przodu i w tył)",
+      "category": "strength",
+      "equipment": [
+        "hantle (opcjonalnie)"
+      ],
+      "how_pl": "Najpierw bez obciążenia, potem z hantlami. Kontrola kolana w wykroku.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Stabilne lądowanie, bez bólu."
+    },
+    {
+      "id": "ex_leg_press",
+      "name_pl": "Leg press (suwnica)",
+      "category": "strength_machine",
+      "equipment": [
+        "suwnica"
+      ],
+      "how_pl": "Ustaw zakres jak przysiad do 90°. Start 30–40 kg, progres 5–10 kg/sesję bez bólu.",
+      "parameters": {
+        "sets": null,
+        "reps": null,
+        "load_note_pl": "30–40 kg start; +5–10 kg/sesję"
+      },
+      "safety_pl": "Brak bólu; kontrolowany ruch."
+    },
+    {
+      "id": "ex_knee_ext_machine_partial",
+      "name_pl": "Prostowanie kolan na maszynie – ograniczony zakres (90°→45°)",
+      "category": "strength_machine",
+      "equipment": [
+        "maszyna do prostowania kolan"
+      ],
+      "how_pl": "Wykonuj tylko w ograniczonym zakresie (90° do 45°), niskie obciążenie.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Ostrożnie (duże siły rzepkowo‑udowe); przerwij jeśli ból."
+    },
+    {
+      "id": "ex_hamstring_curl_machine",
+      "name_pl": "Hamstring curls na maszynie siedząc",
+      "category": "strength_machine",
+      "equipment": [
+        "maszyna"
+      ],
+      "how_pl": "Kontrolowane uginanie podudzi, progres obciążenia wg tolerancji.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Bez bólu."
+    },
+    {
+      "id": "ex_rdl",
+      "name_pl": "Martwy ciąg na prostych nogach (Romanian Deadlift) – lekki",
+      "category": "strength",
+      "equipment": [
+        "hantel/sztanga (lekko)"
+      ],
+      "how_pl": "Zawias biodrowy, neutralny kręgosłup, kolana stabilne. Wzmacnia tył uda i pośladki.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Technika ważniejsza niż ciężar."
+    },
+    {
+      "id": "ex_bulgarian_split_squat",
+      "name_pl": "Przysiad bułgarski (split squat)",
+      "category": "strength_single_leg",
+      "equipment": [
+        "ławka/podest"
+      ],
+      "how_pl": "Tylna stopa na ławce, przysiad na nodze przedniej. Kontrola osi kolana.",
+      "parameters": {
+        "sets": null,
+        "reps_range": "8–12"
+      },
+      "safety_pl": "Zacznij od małego zakresu i asekuracji."
+    },
+    {
+      "id": "ex_single_leg_squat_30",
+      "name_pl": "Półprzysiad jednonóż do ~30° (single leg squat)",
+      "category": "strength_single_leg",
+      "equipment": [
+        "kij/poręcz (asekuracja)"
+      ],
+      "how_pl": "Powolny półprzysiad do ok. 30°. Można asekurować się kijem.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Kolano nie wpada do środka."
+    },
+    {
+      "id": "ex_trampoline_jumps_double",
+      "name_pl": "Podskoki obunóż na trampolinie – miękkie lądowanie",
+      "category": "plyometrics",
+      "equipment": [
+        "trampolina"
+      ],
+      "how_pl": "Lekkie podskoki obunóż, ląduj miękko ze zgięciem bioder i kolan (soft landing).",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Bez bólu; kontroluj oś kolan."
+    },
+    {
+      "id": "ex_trampoline_jumps_single",
+      "name_pl": "Podskoki jednonóż na trampolinie",
+      "category": "plyometrics",
+      "equipment": [
+        "trampolina"
+      ],
+      "how_pl": "Po opanowaniu obunóż przejdź do podskoków jednonóż, kontrolowane lądowanie.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Tylko jeśli stabilnie i bez bólu."
+    },
+    {
+      "id": "ex_medball_rot_throw",
+      "name_pl": "Rzut piłką lekarską o ścianę z rotacją tułowia",
+      "category": "power_coordination",
+      "equipment": [
+        "piłka lekarska",
+        "ściana"
+      ],
+      "how_pl": "Lekki rozkrok, rzut z rotacją tułowia; przy rzucie pięta nogi od strony rzutu odrywa się.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Rotacja z biodra, nie z kolana."
+    },
+    {
+      "id": "ex_side_shuffle",
+      "name_pl": "Krok dostawny w bok (drill agility – lekko)",
+      "category": "agility",
+      "equipment": [
+        "podłoże",
+        "pachołki (opcjonalnie)"
+      ],
+      "how_pl": "Kontrolowany krok dostawny w bok, niska intensywność na start.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Kolano stabilne, bez skrętu na zablokowanej stopie."
+    },
+    {
+      "id": "ex_slalom_cones",
+      "name_pl": "Slalom między pachołkami (marszobieg)",
+      "category": "agility",
+      "equipment": [
+        "pachołki"
+      ],
+      "how_pl": "Marszobieg slalomem, na początku wolno, potem szybciej.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Kontrola osi kolana."
+    },
+    {
+      "id": "ex_bike_stationary",
+      "name_pl": "Rower stacjonarny (niskoudarowe cardio)",
+      "category": "cardio_low_impact",
+      "equipment": [
+        "rower stacjonarny"
+      ],
+      "how_pl": "10–15 min dziennie na niskim oporze, kadencja ok. 60–80 rpm. Progres do 20–30 min.",
+      "parameters": {
+        "duration_minutes_range": "10–30",
+        "cadence_rpm_range": "60–80",
+        "intensity": "niska → umiarkowana"
+      },
+      "safety_pl": "Tylko jeśli brak bólu przy zginaniu."
+    },
+    {
+      "id": "ex_elliptical",
+      "name_pl": "Orbitrek (alternatywne cardio)",
+      "category": "cardio_low_impact",
+      "equipment": [
+        "orbitrek"
+      ],
+      "how_pl": "Cardio niskoudarowe jako alternatywa/uzupełnienie.",
+      "parameters": {
+        "duration_minutes": null
+      },
+      "safety_pl": "Bez bólu."
+    },
+    {
+      "id": "ex_jump_forward_double",
+      "name_pl": "Skoki obunóż w przód + miękkie lądowanie",
+      "category": "plyometrics",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Skok o małej odległości (np. 3 stopy), lądowanie na obu nogach w lekkim ugięciu.",
+      "parameters": {
+        "sets": 3,
+        "reps": 10
+      },
+      "safety_pl": "Kolana nie wpadają do środka."
+    },
+    {
+      "id": "ex_jump_lateral_double",
+      "name_pl": "Skoki obunóż boczne (przez linię/przeszkodę)",
+      "category": "plyometrics",
+      "equipment": [
+        "podłoże",
+        "linia/przeszkoda (mała)"
+      ],
+      "how_pl": "Skoki w bok przez linię/przeszkodę, progresuj odległość stopniowo.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Miękkie lądowanie, kontrola osi."
+    },
+    {
+      "id": "ex_hops_single",
+      "name_pl": "Skoki jednonóż (w miejscu → w przód 1–2 m)",
+      "category": "plyometrics",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Zacznij w miejscu, potem w przód 1–2 m. Priorytet: stabilne lądowanie.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Tylko jeśli bez uciekania kolana i bez bólu."
+    },
+    {
+      "id": "ex_zigzag_run",
+      "name_pl": "Bieg zygzakiem między pachołkami (trucht → pół‑sprint)",
+      "category": "agility",
+      "equipment": [
+        "pachołki"
+      ],
+      "how_pl": "Najpierw trucht, potem pół‑sprint. Skupienie na technice zmiany kierunku.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Nie skręcaj kolana na zablokowanej stopie."
+    },
+    {
+      "id": "ex_shuttle_turns",
+      "name_pl": "Shuttle run / zwroty 90° i 180° (nagłe zatrzymanie i skręt)",
+      "category": "agility",
+      "equipment": [
+        "znaczniki/punkty"
+      ],
+      "how_pl": "Bieg od punktu do punktu, zatrzymanie i skręt. Ćwicz bezpieczną technikę.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Technika > prędkość."
+    },
+    {
+      "id": "ex_boxing_footwork",
+      "name_pl": "Boks – praca nóg (kroki przód/tył/boki w pozycji bokserskiej)",
+      "category": "sport_specific",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Szybkie kroki w przód/tył/boki, zachowaj pozycję bokserską.",
+      "parameters": {
+        "sets": null,
+        "duration_seconds": null
+      },
+      "safety_pl": "Kontrola osi i stabilności."
+    },
+    {
+      "id": "ex_boxing_pivot",
+      "name_pl": "Boks – rotacja stopy przy ciosach (pivot na palcach)",
+      "category": "sport_specific",
+      "equipment": [
+        "podłoże"
+      ],
+      "how_pl": "Przy mocnym ciosie unoś piętę i rotuj na palcach stopy podporowej, by odciążyć kolano.",
+      "parameters": {
+        "sets": null,
+        "reps": null
+      },
+      "safety_pl": "Rotacja z biodra, nie z kolana."
+    }
+  ]
+}

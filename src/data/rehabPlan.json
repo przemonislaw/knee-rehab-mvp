@@ -1,0 +1,253 @@
+{
+  "version": "1.0",
+  "language": "pl",
+  "source": {
+    "title": "Analiza urazu lewego kolana – plan rehabilitacji i profilaktyki",
+    "time_horizon_weeks": "10–12",
+    "notes": "Plan wyekstrahowany z dokumentu; parametry niepodane wprost pozostawiono jako null/TODO."
+  },
+  "phases": [
+    {
+      "id": "phase1",
+      "name_pl": "Faza I – regeneracja/ochrona",
+      "weeks": [
+        1,
+        2
+      ],
+      "goals_pl": [
+        "Zmniejszyć ból i stan zapalny",
+        "Chronić struktury kolana",
+        "Rozpocząć łagodną aktywację mięśni"
+      ],
+      "load_pl": "Minimalne obciążenie; unikanie ruchów wywołujących ból; zakaz sportów i gwałtownych skrętów.",
+      "session_templates": [
+        {
+          "id": "tmpl_phase1_daily_activation",
+          "name_pl": "Codzienna łagodna aktywacja + ROM",
+          "includes": [
+            "ex_quads_setting",
+            "ex_glute_iso",
+            "ex_hamstring_iso",
+            "ex_heel_slides",
+            "ex_stretch_hamstrings",
+            "ex_stretch_calves",
+            "ex_patella_mob",
+            "ex_sit_proprio_shift"
+          ],
+          "notes_pl": "Jeśli kolano było podrażnione – zastosuj RICE w pierwszych dniach."
+        },
+        {
+          "id": "tmpl_phase1_optional_closed_chain",
+          "name_pl": "Opcjonalnie pod koniec 1. tygodnia – zamknięty łańcuch (lekko)",
+          "includes": [
+            "ex_mini_squat_30",
+            "ex_pool_walk"
+          ],
+          "notes_pl": "Tylko jeśli nie prowokuje bólu."
+        }
+      ],
+      "progression_criteria_to_next_phase_pl": [
+        "Ból i odczyn zapalny zmniejszone na tyle, by tolerować lekkie ćwiczenia",
+        "Brak nasilenia objawów przy łagodnej aktywacji"
+      ],
+      "rules_ref": "decisionRules.md"
+    },
+    {
+      "id": "phase2",
+      "name_pl": "Faza II – aktywacja i mobilność",
+      "weeks": [
+        3,
+        4
+      ],
+      "goals_pl": [
+        "Zwiększyć aktywację i siłę kluczowych grup mięśniowych",
+        "Poprawić zakresy ruchu",
+        "Rozpocząć odbudowę kontroli nerwowo‑mięśniowej (propriocepcji)"
+      ],
+      "load_pl": "Małe → umiarkowane. Sport i bieganie nadal wstrzymane.",
+      "session_templates": [
+        {
+          "id": "tmpl_phase2_strength",
+          "name_pl": "Sesja siłowa (podstawy)",
+          "includes": [
+            "ex_half_squat_45_60",
+            "ex_hamstring_curl_prone",
+            "ex_glute_bridge",
+            "ex_side_hip_abduction",
+            "ex_clamshell_miniband",
+            "ex_calf_raises"
+          ],
+          "notes_pl": "Tempo kontrolowane; progres obciążenia tylko jeśli bez bólu."
+        },
+        {
+          "id": "tmpl_phase2_proprio",
+          "name_pl": "Sesja propriocepcji",
+          "includes": [
+            "ex_single_leg_balance",
+            "ex_weight_shift_standing",
+            "ex_ball_throw_catch",
+            "ex_toe_tap_points"
+          ],
+          "notes_pl": "Progresuj trudność stopniowo (oczy zamknięte, poduszka sensomotoryczna)."
+        },
+        {
+          "id": "tmpl_phase2_mobility",
+          "name_pl": "Mobilność / rozciąganie (utrzymanie ROM)",
+          "includes": [
+            "ex_stretch_hamstrings",
+            "ex_stretch_calves",
+            "ex_patella_mob"
+          ],
+          "notes_pl": "Dodaj rozciąganie czworogłowego (jeśli potrzebne) – w katalogu mediów/ćwiczeń możesz dopisać jako osobne ID."
+        }
+      ],
+      "progression_criteria_to_next_phase_pl": [
+        "Lepsza tolerancja obciążenia w codziennych czynnościach",
+        "Coraz stabilniejsze stanie jednonóż (cel 15–30 s bez problemu)"
+      ],
+      "rules_ref": "decisionRules.md"
+    },
+    {
+      "id": "phase3",
+      "name_pl": "Faza III – wzmocnienie i stabilizacja",
+      "weeks": [
+        5,
+        6
+      ],
+      "goals_pl": [
+        "Intensyfikacja treningu siłowego i stabilizacyjnego",
+        "Odbudowa pełnej siły mięśniowej i dynamicznej stabilności",
+        "Przygotowanie do bardziej dynamicznych zadań (kontrolowanych)"
+      ],
+      "load_pl": "Umiarkowane → duże (stopniowo). Trucht w linii prostej możliwy pod koniec 6. tygodnia, jeśli brak bólu przy skokach/siłowym.",
+      "session_templates": [
+        {
+          "id": "tmpl_phase3_strength",
+          "name_pl": "Sesja siłowa (progresja)",
+          "includes": [
+            "ex_squat_to_90_weighted",
+            "ex_lunges_fwd_back",
+            "ex_leg_press",
+            "ex_hamstring_curl_machine",
+            "ex_knee_ext_machine_partial",
+            "ex_rdl",
+            "ex_bulgarian_split_squat"
+          ],
+          "notes_pl": "Dobierz obciążenie tak, by technika była perfekcyjna. Docelowo 3–4 ćwiczenia na duże grupy, 2–3 serie, 8–15 powt."
+        },
+        {
+          "id": "tmpl_phase3_stability_dynamic",
+          "name_pl": "Stabilizacja/propriocepcja (progresja dynamiczna)",
+          "includes": [
+            "ex_single_leg_balance",
+            "ex_single_leg_squat_30",
+            "ex_trampoline_jumps_double",
+            "ex_trampoline_jumps_single",
+            "ex_medball_rot_throw",
+            "ex_side_shuffle",
+            "ex_slalom_cones"
+          ],
+          "notes_pl": "Buduj dynamiczną stabilność; kontrola osi kolana priorytetem."
+        },
+        {
+          "id": "tmpl_phase3_cardio",
+          "name_pl": "Cardio niskoudarowe",
+          "includes": [
+            "ex_bike_stationary",
+            "ex_elliptical"
+          ],
+          "notes_pl": "Rower: start 10–15 min dziennie (niski opór), progres do 20–30 min."
+        }
+      ],
+      "readiness_check_pl": [
+        "Koniec 6. tygodnia: poprawa siły uda (zdolność do kilku przysiadów na jednej nodze)",
+        "Równowaga: stanie jednonóż >30 s",
+        "Brak bólu przy podstawowych ruchach"
+      ],
+      "if_not_ready_pl": "Przedłuż fazę wzmacniającą o 1 tydzień, zamiast przechodzić do skoków/biegania.",
+      "rules_ref": "decisionRules.md"
+    },
+    {
+      "id": "phase4",
+      "name_pl": "Faza IV – trening funkcjonalny / przygotowanie do sportu",
+      "weeks": [
+        7,
+        8
+      ],
+      "goals_pl": [
+        "Przejście do treningu funkcjonalnego naśladującego sport",
+        "Wprowadzenie skoków, zmian kierunku i stopniowego powrotu do biegania",
+        "Utrzymanie siły i propriocepcji w warunkach zmęczenia"
+      ],
+      "load_pl": "Duże, ale stopniowane; intensywne dni przeplataj lżejszymi.",
+      "session_templates": [
+        {
+          "id": "tmpl_phase4_plyo",
+          "name_pl": "Plyometria + lądowania",
+          "includes": [
+            "ex_jump_forward_double",
+            "ex_jump_lateral_double",
+            "ex_hops_single"
+          ],
+          "notes_pl": "Mała objętość na start, dłuższe przerwy, miękkie lądowanie."
+        },
+        {
+          "id": "tmpl_phase4_agility",
+          "name_pl": "Agility / zmiana kierunku",
+          "includes": [
+            "ex_zigzag_run",
+            "ex_shuttle_turns"
+          ],
+          "notes_pl": "Technika skrętu: unikaj skręcania kolana na zablokowanej stopie."
+        },
+        {
+          "id": "tmpl_phase4_sport_specific_boxing",
+          "name_pl": "Sport‑specific (boks – bez kontaktu)",
+          "includes": [
+            "ex_boxing_footwork",
+            "ex_boxing_pivot"
+          ],
+          "notes_pl": "Do końca 8. tygodnia: symulowany trening bokserski (bez sparingu), np. 3 rundy na worku jeśli pewnie."
+        },
+        {
+          "id": "tmpl_phase4_maintenance_strength_proprio",
+          "name_pl": "Utrzymanie fundamentów",
+          "includes": [
+            "ex_squat_to_90_weighted",
+            "ex_leg_press",
+            "ex_single_leg_balance",
+            "ex_single_leg_squat_30"
+          ],
+          "notes_pl": "Utrzymuj 2×/tydz trening siłowy i 2×/tydz propriocepcję (mogą być łączone)."
+        }
+      ],
+      "rules_ref": "decisionRules.md"
+    },
+    {
+      "id": "phase5",
+      "name_pl": "Faza powrotu do sportu / pełna aktywność",
+      "weeks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "goals_pl": [
+        "Stopniowy powrót do squasha, boksu i biegania",
+        "Testy funkcjonalne przed pełnym powrotem",
+        "Utrzymanie ćwiczeń siłowych/proprio jako prewencja"
+      ],
+      "load_pl": "Stopniowy wzrost obciążeń; na początku ograniczenia, później pełny trening.",
+      "week_by_week_pl": {
+        "9": "Lekki trening: squash na połowie kortu bez maksymalnych skrętów; boks techniczny bez sparingu; bieganie – lekkie przebieżki, ostrożnie z podbiegami/zbiegami.",
+        "10": "Jeśli tydzień 9 bez objawów: zwiększ obciążenie (pełne mecze treningowe, lekki sparing zadaniowy ~50% mocy, bieganie wraca do normalnej objętości).",
+        "11-12": "Docelowo udział w rywalizacji amatorskiej; decyzja po ocenie funkcjonalnej."
+      },
+      "return_to_sport_criteria_pl": [
+        "Testy funkcjonalne (np. hop test) i/lub ocena siły: ≥90% symetrii między kończynami",
+        "Brak bólu/niestabilności"
+      ],
+      "rules_ref": "decisionRules.md"
+    }
+  ]
+}
