@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
-import type { AppState, CheckIn, ExerciseProgress, MediaPref } from "./types";
+import type { AppState, CheckIn, ExerciseProgress, MediaPref, PlanMode } from "./types";
 import { getSupabase } from "./supabase";
 
 type SyncStatus = "saved" | "saving" | "error";
@@ -22,6 +22,9 @@ type Ctx = {
   setStartDateISO: (iso: string | null) => void;
   setMediaPref: (pref: MediaPref) => void;
 
+  setPlanMode: (mode: PlanMode) => void;
+  setWeekOverride: (week: number | null) => void;
+
   pickTemplateForDate: (dateISO: string, templateId: string) => void;
   upsertExerciseProgress: (dateISO: string, exerciseId: string, patch: Partial<ExerciseProgress>) => void;
 
@@ -37,6 +40,10 @@ function emptyState(): AppState {
     version: 1,
     startDateISO: null,
     mediaPref: "both",
+
+    planMode: "auto",
+    weekOverride: null,
+
     selectedTemplateByDate: {},
     exerciseProgressByDate: {},
     checkInsByDate: {}
@@ -133,7 +140,7 @@ function clearLastSyncError() {
     // settings
     const settingsRes = await supabase
       .from("user_settings")
-      .select("start_date, media_pref")
+      .select("start_date, media_pref, plan_mode, week_override")
       .eq("user_id", user.id)
       .maybeSingle();
 
@@ -142,14 +149,18 @@ function clearLastSyncError() {
       setState((prev) => ({
         ...prev,
         startDateISO: row.start_date ?? null,
-        mediaPref: (row.media_pref ?? "both") as MediaPref
+        mediaPref: (row.media_pref ?? "both") as MediaPref,
+        planMode: (row.plan_mode ?? "auto") as PlanMode,
+        weekOverride: row.week_override ?? null
       }));
     } else {
       // jeśli nie ma rekordu, utwórz default (upsert)
       const { error } = await supabase.from("user_settings").upsert({
         user_id: user.id,
         start_date: null,
-        media_pref: "both"
+        media_pref: "both",
+        plan_mode: "auto",
+        week_override: null
       });
       if (error) console.error("Supabase user_settings bootstrap upsert failed:", error);
     }
@@ -299,12 +310,14 @@ setStartDateISO: (iso) => {
           return;
         }
 
-        const currentPref = stateRef.current.mediaPref;
+        const current = stateRef.current;
 
         const { error } = await supabase.from("user_settings").upsert({
           user_id: user.id,
           start_date: iso,
-          media_pref: currentPref
+          media_pref: current.mediaPref,
+          plan_mode: current.planMode,
+          week_override: current.weekOverride
         });
 
         if (error) {
@@ -343,12 +356,14 @@ setMediaPref: (pref) => {
           return;
         }
 
-        const currentStart = stateRef.current.startDateISO;
+        const current = stateRef.current;
 
         const { error } = await supabase.from("user_settings").upsert({
           user_id: user.id,
-          start_date: currentStart,
-          media_pref: pref
+          start_date: current.startDateISO,
+          media_pref: pref,
+          plan_mode: current.planMode,
+          week_override: current.weekOverride
         });
 
         if (error) {
@@ -368,6 +383,82 @@ setMediaPref: (pref) => {
     });
 },
 
+setPlanMode: (mode) => {
+  const supabase = getSupabase();
+
+  // optimistic: przy przejściu na auto czyścimy override (MVP – mniej zaskoczeń)
+  setState((s) => ({
+    ...s,
+    planMode: mode,
+    weekOverride: mode === "auto" ? null : s.weekOverride
+  }));
+
+  const token = beginSync();
+
+  supabase.auth
+    .getSession()
+    .then(async ({ data }) => {
+      try {
+        const user = data.session?.user;
+        if (!user) {
+          endSyncOk(token);
+          return;
+        }
+
+        const current = stateRef.current;
+
+        const { error } = await supabase.from("user_settings").upsert({
+          user_id: user.id,
+          start_date: current.startDateISO,
+          media_pref: current.mediaPref,
+          plan_mode: mode,
+          week_override: mode === "auto" ? null : current.weekOverride
+        });
+
+        if (error) endSyncErr(token, error);
+        else endSyncOk(token);
+      } catch (e) {
+        endSyncErr(token, e);
+      }
+    })
+    .catch((e) => endSyncErr(token, e));
+},
+
+setWeekOverride: (week) => {
+  const supabase = getSupabase();
+
+  setState((s) => ({ ...s, weekOverride: week }));
+
+  const token = beginSync();
+
+  supabase.auth
+    .getSession()
+    .then(async ({ data }) => {
+      try {
+        const user = data.session?.user;
+        if (!user) {
+          endSyncOk(token);
+          return;
+        }
+
+        const current = stateRef.current;
+
+        const { error } = await supabase.from("user_settings").upsert({
+          user_id: user.id,
+          start_date: current.startDateISO,
+          media_pref: current.mediaPref,
+          plan_mode: current.planMode,
+          week_override: week
+        });
+
+        if (error) endSyncErr(token, error);
+        else endSyncOk(token);
+      } catch (e) {
+        endSyncErr(token, e);
+      }
+    })
+    .catch((e) => endSyncErr(token, e));
+},
       
 pickTemplateForDate: (dateISO, templateId) => {
   const supabase = getSupabase();

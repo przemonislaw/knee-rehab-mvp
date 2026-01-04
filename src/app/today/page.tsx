@@ -17,7 +17,13 @@ export default function TodayPage() {
 
   const todayISO = dateISO(new Date());
 
-  const weekNo = state.startDateISO ? weekNumberFromStart(state.startDateISO, new Date()) : null;
+  const weekNo =
+  state.planMode === "manual" && state.weekOverride
+    ? state.weekOverride
+    : state.startDateISO
+      ? weekNumberFromStart(state.startDateISO, new Date())
+      : null;
+      
   const phase = weekNo ? getPhaseForWeek(weekNo) : null;
   const templates = getTemplates(phase);
 

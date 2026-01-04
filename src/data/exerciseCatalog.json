@@ -15,7 +15,25 @@
         "reps": null,
         "hold_seconds": null
       },
-      "safety_pl": "Przerwij lub zmniejsz, jeśli ból przekracza 3/10 w trakcie."
+      "safety_pl": "Przerwij lub zmniejsz, jeśli ból przekracza 3/10 w trakcie.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_glute_iso",
@@ -30,7 +48,25 @@
         "reps": null,
         "hold_seconds": null
       },
-      "safety_pl": "Bez bólu kolana."
+      "safety_pl": "Bez bólu kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_hamstring_iso",
@@ -45,7 +81,25 @@
         "reps": null,
         "hold_seconds": null
       },
-      "safety_pl": "Bez bólu kolana."
+      "safety_pl": "Bez bólu kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_heel_slides",
@@ -59,7 +113,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Zakres tylko do komfortu, bez prowokowania bólu."
+      "safety_pl": "Zakres tylko do komfortu, bez prowokowania bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_stretch_hamstrings",
@@ -73,7 +145,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Nie doprowadzaj do bólu stawu."
+      "safety_pl": "Nie doprowadzaj do bólu stawu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_stretch_calves",
@@ -87,7 +177,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Bez bólu kolana."
+      "safety_pl": "Bez bólu kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_patella_mob",
@@ -101,7 +209,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Tylko jeśli bez przeciwwskazań bólowych."
+      "safety_pl": "Tylko jeśli bez przeciwwskazań bólowych.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_sit_proprio_shift",
@@ -115,7 +241,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Bez bólu."
+      "safety_pl": "Bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_mini_squat_30",
@@ -130,7 +274,25 @@
         "reps": null,
         "tempo": "powoli"
       },
-      "safety_pl": "Nie przekraczaj bólu; jeśli ból >3/10 – zmniejsz."
+      "safety_pl": "Nie przekraczaj bólu; jeśli ból >3/10 – zmniejsz.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_pool_walk",
@@ -143,7 +305,25 @@
       "parameters": {
         "duration_minutes": null
       },
-      "safety_pl": "Stosuj szczególnie, jeśli ląd prowokuje ból."
+      "safety_pl": "Stosuj szczególnie, jeśli ląd prowokuje ból.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_half_squat_45_60",
@@ -159,7 +339,25 @@
         "reps": null,
         "tempo": "2s dół / 2s góra"
       },
-      "safety_pl": "Unikaj ruchów skrętnych i skrajnych zakresów."
+      "safety_pl": "Unikaj ruchów skrętnych i skrajnych zakresów.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_hamstring_curl_prone",
@@ -174,7 +372,25 @@
         "reps": null,
         "load_note_pl": "0.5–1 kg na start (jeśli wersja z obciążnikiem)"
       },
-      "safety_pl": "Bez bólu."
+      "safety_pl": "Bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_glute_bridge",
@@ -188,7 +404,25 @@
         "sets": 3,
         "reps": 10
       },
-      "safety_pl": "Bez bólu kolana."
+      "safety_pl": "Bez bólu kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_side_hip_abduction",
@@ -202,7 +436,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Kontroluj miednicę."
+      "safety_pl": "Kontroluj miednicę.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_clamshell_miniband",
@@ -216,7 +468,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Bez kompensacji w miednicy."
+      "safety_pl": "Bez kompensacji w miednicy.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_calf_raises",
@@ -230,7 +500,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Stabilna stopa, bez bólu."
+      "safety_pl": "Stabilna stopa, bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_single_leg_balance",
@@ -245,7 +533,25 @@
         "sets": null,
         "duration_seconds": 30
       },
-      "safety_pl": "Asekuruj się, by nie dopuścić do skrętu."
+      "safety_pl": "Asekuruj się, by nie dopuścić do skrętu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_weight_shift_standing",
@@ -259,7 +565,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Bez bólu."
+      "safety_pl": "Bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_ball_throw_catch",
@@ -274,7 +598,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Utrzymuj oś kolana."
+      "safety_pl": "Utrzymuj oś kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_toe_tap_points",
@@ -288,7 +630,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Kontroluj kolano nogi podporowej."
+      "safety_pl": "Kontroluj kolano nogi podporowej.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_squat_to_90_weighted",
@@ -303,7 +663,25 @@
         "reps": null,
         "load_note_pl": "Start ok. 10 kg, progres do ~20 kg wg tolerancji"
       },
-      "safety_pl": "Unikaj koślawienia kolan."
+      "safety_pl": "Unikaj koślawienia kolan.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_lunges_fwd_back",
@@ -317,7 +695,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Stabilne lądowanie, bez bólu."
+      "safety_pl": "Stabilne lądowanie, bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_leg_press",
@@ -332,7 +728,25 @@
         "reps": null,
         "load_note_pl": "30–40 kg start; +5–10 kg/sesję"
       },
-      "safety_pl": "Brak bólu; kontrolowany ruch."
+      "safety_pl": "Brak bólu; kontrolowany ruch.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_knee_ext_machine_partial",
@@ -346,7 +760,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Ostrożnie (duże siły rzepkowo‑udowe); przerwij jeśli ból."
+      "safety_pl": "Ostrożnie (duże siły rzepkowo‑udowe); przerwij jeśli ból.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_hamstring_curl_machine",
@@ -360,7 +792,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Bez bólu."
+      "safety_pl": "Bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_rdl",
@@ -374,7 +824,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Technika ważniejsza niż ciężar."
+      "safety_pl": "Technika ważniejsza niż ciężar.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_bulgarian_split_squat",
@@ -388,7 +856,25 @@
         "sets": null,
         "reps_range": "8–12"
       },
-      "safety_pl": "Zacznij od małego zakresu i asekuracji."
+      "safety_pl": "Zacznij od małego zakresu i asekuracji.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_single_leg_squat_30",
@@ -402,7 +888,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Kolano nie wpada do środka."
+      "safety_pl": "Kolano nie wpada do środka.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_trampoline_jumps_double",
@@ -416,7 +920,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Bez bólu; kontroluj oś kolan."
+      "safety_pl": "Bez bólu; kontroluj oś kolan.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_trampoline_jumps_single",
@@ -430,7 +952,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Tylko jeśli stabilnie i bez bólu."
+      "safety_pl": "Tylko jeśli stabilnie i bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_medball_rot_throw",
@@ -445,7 +985,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Rotacja z biodra, nie z kolana."
+      "safety_pl": "Rotacja z biodra, nie z kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_side_shuffle",
@@ -460,7 +1018,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Kolano stabilne, bez skrętu na zablokowanej stopie."
+      "safety_pl": "Kolano stabilne, bez skrętu na zablokowanej stopie.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_slalom_cones",
@@ -474,7 +1050,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Kontrola osi kolana."
+      "safety_pl": "Kontrola osi kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_bike_stationary",
@@ -489,7 +1083,25 @@
         "cadence_rpm_range": "60–80",
         "intensity": "niska → umiarkowana"
       },
-      "safety_pl": "Tylko jeśli brak bólu przy zginaniu."
+      "safety_pl": "Tylko jeśli brak bólu przy zginaniu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_elliptical",
@@ -502,7 +1114,25 @@
       "parameters": {
         "duration_minutes": null
       },
-      "safety_pl": "Bez bólu."
+      "safety_pl": "Bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_jump_forward_double",
@@ -516,7 +1146,25 @@
         "sets": 3,
         "reps": 10
       },
-      "safety_pl": "Kolana nie wpadają do środka."
+      "safety_pl": "Kolana nie wpadają do środka.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_jump_lateral_double",
@@ -531,7 +1179,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Miękkie lądowanie, kontrola osi."
+      "safety_pl": "Miękkie lądowanie, kontrola osi.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_hops_single",
@@ -545,7 +1211,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Tylko jeśli bez uciekania kolana i bez bólu."
+      "safety_pl": "Tylko jeśli bez uciekania kolana i bez bólu.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_zigzag_run",
@@ -559,7 +1243,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Nie skręcaj kolana na zablokowanej stopie."
+      "safety_pl": "Nie skręcaj kolana na zablokowanej stopie.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_shuttle_turns",
@@ -573,7 +1275,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Technika > prędkość."
+      "safety_pl": "Technika > prędkość.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_boxing_footwork",
@@ -587,7 +1307,25 @@
         "sets": null,
         "duration_seconds": null
       },
-      "safety_pl": "Kontrola osi i stabilności."
+      "safety_pl": "Kontrola osi i stabilności.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     },
     {
       "id": "ex_boxing_pivot",
@@ -601,7 +1339,25 @@
         "sets": null,
         "reps": null
       },
-      "safety_pl": "Rotacja z biodra, nie z kolana."
+      "safety_pl": "Rotacja z biodra, nie z kolana.",
+      "images": [
+        {
+          "kind": "start",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        },
+        {
+          "kind": "end",
+          "url": null,
+          "status": "draft",
+          "source": "AI",
+          "license": "internal",
+          "notes": "Poglądowe – do ręcznej weryfikacji."
+        }
+      ]
     }
   ]
 }

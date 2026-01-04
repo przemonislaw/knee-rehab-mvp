@@ -33,12 +33,30 @@ export type ExerciseCatalog = {
   exercises: Exercise[];
 };
 
+export type MediaStatus = "draft" | "approved";
+export type ExerciseImageKind = "start" | "end";
+
+export type ExerciseImage = {
+  kind: ExerciseImageKind;
+  url?: string | null;
+
+  // wymagane – bo chcesz zawsze oznaczać AI obrazki jako DRAFT
+  status: MediaStatus;
+
+  source?: string | null;  // np. "AI"
+  license?: string | null; // np. "internal"
+  notes?: string | null;   // np. "Poglądowe – do weryfikacji"
+};
+
+export type PlanMode = "auto" | "manual";
+
 export type Exercise = {
   id: string;
   name_pl: string;
   category?: string;
   equipment?: string[];
   how_pl?: string;
+  images?: ExerciseImage[]; // nowe A/B
   parameters?: Record<string, unknown>;
   safety_pl?: string;
 
@@ -78,6 +96,8 @@ export type AppState = {
   // ustawienia użytkownika (w Settings)
   startDateISO: string | null; // YYYY-MM-DD
   mediaPref: MediaPref;
+  planMode: PlanMode;
+  weekOverride: number | null;
 
   // dane dzienne
   selectedTemplateByDate: Record<string, string | undefined>;
